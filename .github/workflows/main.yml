@@ -1,0 +1,15 @@
+name: CI-Dictionary-unit-test
+
+on:
+  push:
+    branches:
+      - dev2
+      - v1
+
+jobs:
+  my-testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
