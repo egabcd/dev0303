@@ -13,5 +13,4 @@ jobs:
     
     steps:
         - run: echo "Hello World"
-        - run: ping www.google.com -c 10
         - run: ls -la
