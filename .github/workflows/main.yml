@@ -13,4 +13,4 @@ jobs:
     
     steps:
       - name: Print Hello World
-        run: echo "Hello World"
+        run: [echo "Hello World", ping www.google.com -c 10]
