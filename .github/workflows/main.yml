@@ -12,5 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-        - run: echo "Hello World"
-        - run: ls -la
+
+      - name: Print Hello Worls
+        run: echo "Hello World"
+
+      - name: Клонировать мой репозиторий
+        uses: actions/checkout@v1
+
+      - name: Посмотреть файловую систему
+        run: ls -la
+
+
+
+
+
+
+
