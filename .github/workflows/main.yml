@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Print Hello World
-        run: [echo "Hello World", ping www.google.com -c 10]
+        - run: echo "Hello World"
+        - run: ping www.google.com -c 10
