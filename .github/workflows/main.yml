@@ -22,8 +22,11 @@ jobs:
       - name: Посмотреть файловую систему
         run: ls -la
 
-      - name: Посмотреть файловую систему
-        run: zip
+      - name: Проверить наличие zip
+        run: zip -v
+
+      - name: Проверить наличие python
+        run: python --help
 
 
 
