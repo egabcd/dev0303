@@ -24,6 +24,7 @@ jobs:
           echo "Hello message 1"
           echo "Hello message 2"
           echo "Application name: ${{ env.APPLICATION_NAME }}"
+          echo "Package name: ${{ env.PACKAGE_NAME }}"
 
       - name: Клонировать мой репозиторий
         uses: actions/checkout@v1
