@@ -1,2 +1,2 @@
 # dev0303
-<img src="https://github/egabcd/dev0303/worlflows/CI-Dictionary-unit-test/badge.svg?branch=master>  
+<img src="https://github/egabcd/dev0303/workflows/CI-Dictionary-unit-test/badge.svg?branch=master>  
