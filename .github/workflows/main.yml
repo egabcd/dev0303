@@ -13,6 +13,10 @@ on:
 jobs:
   my-testing:
     runs-on: ubuntu-latest
+    env:
+      VAR1 : "This is Var1"
+      VAR2 : "This is Var2"
+
     
     steps:
 
@@ -37,6 +41,11 @@ jobs:
 
       - name: Проверить наличие python
         run: python --help
+
+      - name: Распечатать локальные переменные Var1 и Var2 внутри jobs
+        run: |
+          echo "Var1 = ${{ env.VAR1 }}"
+          echo "Var2 = ${{ env.VAR2 }}"
 
 
 
