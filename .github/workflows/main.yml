@@ -1,4 +1,7 @@
 name: CI-Dictionary-unit-test
+env:
+  APPLICATION_NAME: "MyUnitTests"
+  PACKAGE_NAME:  "Dictionary-${{ github.sha }}"
 
 on:
   push:
@@ -16,6 +19,12 @@ jobs:
       - name: Print Hello Worls
         run: echo "Hello World"
 
+      - name: Выполнить несколько комманд
+        run: |
+          echo "Hello message 1"
+          echo "Hello message 2"
+          echo "Application name: ${{ env.APPLICATION_NAME }}
+
       - name: Клонировать мой репозиторий
         uses: actions/checkout@v1
 
@@ -23,7 +32,7 @@ jobs:
         run: ls -la
 
       - name: Проверить наличие zip
-        run: zip -v
+        run: zip --version
 
       - name: Проверить наличие python
         run: python --help
