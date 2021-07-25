@@ -47,7 +47,7 @@ jobs:
           echo "Var1 = ${{ env.VAR1 }}"
           echo "Var2 = ${{ env.VAR2 }}"
 
-      - name:
+
 
 
 
